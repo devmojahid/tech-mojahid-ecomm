@@ -1,5 +1,8 @@
-@import "./vendors/reset";
+@import "./vendors/_fonts";
 @import "./vendors/variables";
+@import "./vendors/reset";
+
+@import "./mixins/media";
 
 @import "./components/button";
 @import "./components/common_heading";
@@ -7,6 +10,8 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/navbar";
+@import "./layouts/product_jumbo";
+@import "./layouts/container";
 
 @import "./pages/home";
 @import "./pages/about";

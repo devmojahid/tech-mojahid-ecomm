@@ -1,0 +1,74 @@
+nav{
+    .nav_body{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 18px 0px;
+        .logo{
+            height: 65px;
+            img{
+
+            }
+        }
+
+        .menu{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                height: 100%;
+                gap: 55px;
+                li{
+                    a{
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: var(--black);
+                        position: relative;
+
+                        &::after{
+                            content: "";
+                            height: 2px;
+                            width: 0;
+                            background-color: var(--Gradient-linear-stroke-bottom, rgba(12, 104, 244, 0.30));
+                            position: absolute;
+                            bottom: -10px;
+                            left: -10px;
+                            background-position: center center;
+                            transition-duration: .3s;
+
+                        }
+                         &:hover{
+                            color: var(--primary);
+                            &::after{
+                                width: calc(100% + 20px);
+                            }
+                         }
+                    }
+                }
+            }
+        }
+
+        .action_menus{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                height: 100%;
+                gap: 25px;
+                li{
+                    a{
+                        .svg_icon{
+                            transition-duration: .3s;
+                        }
+                        &:hover{
+                            .svg_icon{
+                                background-color: var(--primary);
+                            }
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
